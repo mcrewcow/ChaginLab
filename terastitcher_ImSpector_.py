@@ -1,3 +1,5 @@
+## This python code is adopted from terastitcher and perform stitching alignment of 3D tile images https://abria.github.io/TeraStitcher/
+
 import sys
 import os
 from xml.dom import minidom
