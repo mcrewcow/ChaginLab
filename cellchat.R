@@ -13,7 +13,7 @@ CellC <- function(cellchat){
   cellchat <- identifyOverExpressedGenes(cellchat)
   cellchat <- identifyOverExpressedInteractions(cellchat)
   cellchat <- computeCommunProb(cellchat)
-  # Filter out the cell-cell communication if there are only few number of cells in certain cell groups
+  # Filter out the cell-cell communication if there are only few number of cells in certain cell groups #add the parameters for ProjectPPI and computeCommun
   cellchat <- filterCommunication(cellchat, min.cells = 10)
   cellchat <- computeCommunProbPathway(cellchat)
   cellchat <- aggregateNet(cellchat)
